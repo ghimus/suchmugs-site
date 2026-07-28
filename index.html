@@ -1,103 +1,78 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Suchmugs - personalised gifts, built in Bucharest</title>
-<meta name="description" content="Suchmugs makes personalised gifts. We build the software that designs, validates and produces them.">
+<title>Suchmugs - personalised gifts, designed in Bucharest</title>
+<meta name="description" content="Suchmugs designs personalised gifts. We build the software that designs, validates and routes them to production.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#F6F1E9; --ink:#1B1916; --muted:#6F675C; --line:#E7DFD2;
-  --clay:#C0573A; --card:#FFFFFF;
-  --brand:#b80818; --ink-blue:#385898;
+  --clay:#C0573A; --card:#FFFFFF; --brand:#b80818; --ink-blue:#385898;
   --shadow:0 1px 2px rgba(27,25,22,.04), 0 8px 24px rgba(27,25,22,.06);
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{
-  background:var(--paper); color:var(--ink);
+body{background:var(--paper);color:var(--ink);
   font-family:'Hanken Grotesk',system-ui,-apple-system,Segoe UI,sans-serif;
-  font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
-  background-image:radial-gradient(rgba(27,25,22,.05) 1px, transparent 1px);
-  background-size:26px 26px;
-}
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(rgba(27,25,22,.05) 1px,transparent 1px);background-size:26px 26px}
 .wrap{max-width:820px;margin:0 auto;padding:0 24px}
-h1,h2,h3,.display{font-family:'Bricolage Grotesque',Georgia,serif;font-weight:600;letter-spacing:-.02em}
-header.hero{padding:64px 0 54px;background:linear-gradient(180deg,#FBF7F1 0%,var(--paper) 100%);border-bottom:1px solid var(--line)}
-.herogrid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
-.heroart{position:relative;display:block;border:0}
-.heroart img{width:100%;border-radius:20px;border:1px solid var(--line);box-shadow:0 18px 44px rgba(27,25,22,.14);display:block;aspect-ratio:1/1;object-fit:cover}
-.heroart .tagpill{position:absolute;left:-10px;bottom:16px;background:var(--ink-blue);color:#fff;font-size:13px;font-weight:600;padding:7px 15px;border-radius:999px;box-shadow:var(--shadow)}
-.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
-.trust div{min-width:96px}
-.trust b{display:block;font-family:'Bricolage Grotesque',serif;font-size:24px;color:var(--ink-blue);line-height:1.1}
-.trust span{font-size:13px;color:var(--muted)}
-@media (max-width:760px){.herogrid{grid-template-columns:1fr;gap:30px}.heroart{order:-1}}
-.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:600;color:var(--clay);margin-bottom:18px}
-h1{font-size:clamp(38px,7vw,68px);line-height:.95;margin:0 0 22px}
-h1 .accent{color:var(--clay)}
-.lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:60ch;margin:0}
-h2{font-size:26px;margin:0 0 14px}
-main{padding-bottom:24px}
-section{margin:0 0 34px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 30px;box-shadow:var(--shadow)}
-.card p:last-child{margin-bottom:0}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,serif;font-weight:600;letter-spacing:-.02em}
+a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(192,87,58,.35)}
+a:hover{border-bottom-color:var(--clay)}
 p{margin:0 0 14px}
 .muted{color:var(--muted)}
 ul{margin:0;padding-left:20px;color:var(--muted)}
 li{margin-bottom:8px}
-a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(192,87,58,.35)}
-a:hover{border-bottom-color:var(--clay)}
-@media (max-width:560px){.buys{gap:8px}.buys{margin-top:30px}
-.buyrow{display:flex;flex-wrap:nowrap;align-items:center;gap:11px}
-.orline{white-space:nowrap;margin:0 3px}
-.pill{box-sizing:border-box;height:46px;display:inline-flex;align-items:center;justify-content:center;
-      padding:0 20px;border-radius:999px;border:2px solid transparent;white-space:nowrap;
-      text-decoration:none;transition:background .15s,border-color .15s,transform .15s}
-.cta{background:var(--clay);color:#fff;font-weight:600;font-size:15px;box-shadow:var(--shadow)}
-.cta:hover{background:#a8492f;border-color:transparent}
-.mark{background:transparent}
-.mark img{height:21px;width:auto;display:block}
-.mark-sm{border-color:#b80818}  .mark-sm:hover{background:rgba(184,8,24,.06)}
-.mark-sc{border-color:#385898}  .mark-sc:hover{background:rgba(56,88,152,.06)}
-.mark-sg{border-color:#2b664a}  .mark-sg:hover{background:rgba(43,102,74,.06)}
-@media (max-width:860px){.buyrow{flex-wrap:wrap;gap:10px}}
-@media (max-width:620px){.pill{height:42px;padding:0 16px}.mark img{height:18px}.marks{gap:10px}}
-.buyrow+.orline{width:100%;margin:4px 0 0}}
+
+/* language toggle */
+.langbar{max-width:820px;margin:0 auto;padding:14px 24px 0;display:flex;justify-content:flex-end;gap:6px}
+.lang{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  background:none;border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;font-family:inherit}
+.lang[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* hero */
+header.hero{padding:34px 0 54px;background:linear-gradient(180deg,#FBF7F1 0%,var(--paper) 100%);border-bottom:1px solid var(--line)}
+.herogrid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.wordmark-img{max-width:300px;height:auto;display:block;margin-bottom:18px}
+.eyebrow{text-transform:uppercase;letter-spacing:.07em;font-size:11px;font-weight:600;color:var(--clay);
+  margin-bottom:18px;white-space:nowrap}
+h1{font-size:clamp(38px,7vw,68px);line-height:.95;margin:0 0 22px}
+h1 .accent{color:var(--clay)}
+.lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:60ch;margin:0}
+.heroart{position:relative;display:block;border:0}
+.heroart img{width:100%;border-radius:20px;border:1px solid var(--line);
+  box-shadow:0 18px 44px rgba(27,25,22,.14);display:block;aspect-ratio:1/1;object-fit:cover}
+.heroart .tagpill{position:absolute;left:-10px;bottom:16px;background:var(--ink-blue);color:#fff;
+  font-size:13px;font-weight:600;padding:7px 15px;border-radius:999px;box-shadow:var(--shadow)}
+
+/* buy row */
 .buys{margin-top:30px}
 .buyrow{display:flex;flex-wrap:nowrap;align-items:center;gap:11px}
-.orline{white-space:nowrap;margin:0 3px}
+.orline{white-space:nowrap;margin:0 3px;color:var(--muted);font-size:16px}
 .pill{box-sizing:border-box;height:46px;display:inline-flex;align-items:center;justify-content:center;
-      padding:0 20px;border-radius:999px;border:2px solid transparent;white-space:nowrap;
-      text-decoration:none;transition:background .15s,border-color .15s,transform .15s}
+  padding:0 20px;border-radius:999px;border:2px solid transparent;white-space:nowrap;
+  text-decoration:none;transition:background .15s,border-color .15s}
 .cta{background:var(--clay);color:#fff;font-weight:600;font-size:15px;box-shadow:var(--shadow)}
 .cta:hover{background:#a8492f;border-color:transparent}
 .mark{background:transparent}
 .mark img{height:21px;width:auto;display:block}
-.mark-sm{border-color:#b80818}  .mark-sm:hover{background:rgba(184,8,24,.06)}
-.mark-sc{border-color:#385898}  .mark-sc:hover{background:rgba(56,88,152,.06)}
-.mark-sg{border-color:#2b664a}  .mark-sg:hover{background:rgba(43,102,74,.06)}
-@media (max-width:860px){.buyrow{flex-wrap:wrap;gap:10px}}
-@media (max-width:620px){.pill{height:42px;padding:0 16px}.mark img{height:18px}.marks{gap:10px}}
-.buyrow+.orline{color:var(--muted);font-size:16px}
-@media (max-width:760px){.marks{gap:16px}.mark img{height:20px}}
-@media (max-width:520px){.buys{gap:12px}.buys{margin-top:30px}
-.buyrow{display:flex;flex-wrap:nowrap;align-items:center;gap:11px}
-.orline{white-space:nowrap;margin:0 3px}
-.pill{box-sizing:border-box;height:46px;display:inline-flex;align-items:center;justify-content:center;
-      padding:0 20px;border-radius:999px;border:2px solid transparent;white-space:nowrap;
-      text-decoration:none;transition:background .15s,border-color .15s,transform .15s}
-.cta{background:var(--clay);color:#fff;font-weight:600;font-size:15px;box-shadow:var(--shadow)}
-.cta:hover{background:#a8492f;border-color:transparent}
-.mark{background:transparent}
-.mark img{height:21px;width:auto;display:block}
-.mark-sm{border-color:#b80818}  .mark-sm:hover{background:rgba(184,8,24,.06)}
-.mark-sc{border-color:#385898}  .mark-sc:hover{background:rgba(56,88,152,.06)}
-.mark-sg{border-color:#2b664a}  .mark-sg:hover{background:rgba(43,102,74,.06)}
-@media (max-width:860px){.buyrow{flex-wrap:wrap;gap:10px}}
-@media (max-width:620px){.pill{height:42px;padding:0 16px}.mark img{height:18px}.marks{gap:10px}}
-.buyrow+.orline{width:100%}.marks{flex-wrap:wrap;gap:14px}}
-.wordmark{font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:34px;letter-spacing:-.03em;color:var(--brand);margin-bottom:16px}
-.wordmark-img{max-width:300px;height:auto;display:block;margin-bottom:18px}
+.mark-sm{border-color:#b80818} .mark-sm:hover{background:rgba(184,8,24,.06)}
+.mark-sc{border-color:#385898} .mark-sc:hover{background:rgba(56,88,152,.06)}
+.mark-sg{border-color:#2b664a} .mark-sg:hover{background:rgba(43,102,74,.06)}
+
+/* trust bar */
+.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.trust div{min-width:96px}
+.trust b{display:block;font-family:'Bricolage Grotesque',serif;font-size:24px;color:var(--ink-blue);line-height:1.1}
+.trust span{font-size:13px;color:var(--muted)}
+
+/* body */
+main{padding-bottom:24px}
+section{margin:0 0 34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 30px;box-shadow:var(--shadow)}
+.card p:last-child{margin-bottom:0}
+h2{font-size:26px;margin:0 0 14px;border-left:4px solid var(--ink-blue);padding-left:12px;margin-left:-16px}
 .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-top:18px}
 .prod{display:block;text-decoration:none;border:0}
 .prod img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
@@ -105,38 +80,43 @@ a:hover{border-bottom-color:var(--clay)}
 .prod span{display:block;font-size:13px;color:var(--muted)}
 .prod .sold{color:var(--ink-blue);font-weight:600}
 .prod:hover img{border-color:var(--ink-blue)}
-h2{border-left:4px solid var(--ink-blue);padding-left:12px;margin-left:-16px}
-.shops{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
-.shop{display:block;border:1px solid var(--line);border-radius:14px;padding:15px 17px;background:var(--paper);text-decoration:none}
-.shop:hover{border-color:var(--ink-blue)}
-.shop b{display:block;color:var(--brand);font-family:'Bricolage Grotesque',serif;font-size:16px;margin-bottom:3px}
-.shop span{display:block;color:var(--muted);font-size:14px;line-height:1.45}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:15px}
 dt{color:var(--muted)}
 dd{margin:0}
 footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font-size:14px;color:var(--muted)}
-@media (max-width:560px){header.hero{padding:56px 0 36px}.card{padding:22px 20px}dl{grid-template-columns:1fr;gap:2px 0}dt{margin-top:10px}}
+
+@media (max-width:860px){.buyrow{flex-wrap:wrap;gap:10px}}
+@media (max-width:760px){.herogrid{grid-template-columns:1fr;gap:30px}.heroart{order:-1}
+  .eyebrow{white-space:normal}}
+@media (max-width:620px){.pill{height:42px;padding:0 16px}.mark img{height:18px}}
+@media (max-width:560px){header.hero{padding:26px 0 36px}.card{padding:22px 20px}
+  dl{grid-template-columns:1fr;gap:2px 0}dt{margin-top:10px}}
 </style></head><body>
+
+<div class="langbar">
+  <button class="lang" data-lang="en" aria-pressed="true">EN</button>
+  <button class="lang" data-lang="ro" aria-pressed="false">RO</button>
+</div>
 
 <header class="hero"><div class="wrap">
   <div class="herogrid">
     <div>
       <img class="wordmark-img" src="img/logo-suchmugs.png" alt="Suchmugs">
-      <div class="eyebrow">Personalised gifts &middot; made to order &middot; shipped in the USA</div>
-      <h1>The gift that <span class="accent">proves you know them</span>.</h1>
-      <p class="lede">Mugs, cards, tumblers and ornaments, personalised to one specific person. Designed and produced by Suchmugs S.R.L. - selling since 2016.</p>
+      <div class="eyebrow" data-ro="Cadouri personalizate &middot; făcute la comandă &middot; printate în SUA">Personalised gifts &middot; made to order &middot; printed in the USA</div>
+      <h1 data-ro='Cadoul care <span class="accent">arată că îl cunoști</span>.'>The gift that <span class="accent">proves you know them</span>.</h1>
+      <p class="lede" data-ro="Căni, felicitări, pahare termice și ornamente, personalizate pentru o singură persoană anume. Design realizat de Suchmugs S.R.L. - vindem din 2016.">Mugs, cards, tumblers and ornaments, personalised to one specific person. Designed by Suchmugs S.R.L. - selling since 2016.</p>
     </div>
     <a class="heroart" href="https://suchmugs.etsy.com/listing/586899319">
       <img src="img/hero-handful.jpg" alt="Funny mug reading I know I am a handful but that is why you got two hands">
-      <div class="tagpill">440+ favourites</div>
+      <div class="tagpill" data-ro="440+ favorite">440+ favourites</div>
     </a>
   </div>
 
   <div class="buys">
     <div class="buyrow">
-      <a class="pill cta" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas">Shop on Amazon</a>
-      <span class="orline">or on Etsy:</span>
+      <a class="pill cta" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas" data-ro="Cumpără pe Amazon">Shop on Amazon</a>
+      <span class="orline" data-ro="sau pe Etsy:">or on Etsy:</span>
       <a class="pill mark mark-sm" href="https://suchmugs.etsy.com"><img src="img/mark-suchmugs-v2.png" alt="Suchmugs on Etsy"></a>
       <a class="pill mark mark-sc" href="https://suchcards.etsy.com"><img src="img/mark-suchcards-v2.png" alt="Suchcards on Etsy"></a>
       <a class="pill mark mark-sg" href="https://suchgiftsco.etsy.com"><img src="img/mark-suchgifts-v2.png" alt="Suchgifts on Etsy"></a>
@@ -144,10 +124,10 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
   </div>
 
   <div class="trust">
-    <div><b>10 yrs</b><span>selling since 2016</span></div>
-    <div><b>100k+</b><span>orders shipped</span></div>
-    <div><b>USA</b><span>printed and shipped</span></div>
-    <div><b>4</b><span>storefronts</span></div>
+    <div><b>10 yrs</b><span data-ro="vindem din 2016">selling since 2016</span></div>
+    <div><b>100k+</b><span data-ro="comenzi livrate">orders shipped</span></div>
+    <div><b>USA</b><span data-ro="printate și livrate">printed and shipped</span></div>
+    <div><b>4</b><span data-ro="magazine">storefronts</span></div>
   </div>
 </div></header>
 
@@ -155,70 +135,68 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
 
   <section>
     <div class="card">
-      <h2>What we do</h2>
-      <p class="muted">A personalised gift only works if it is right for one specific person. Getting that right at scale is a production problem and a software problem at the same time, and most of our work goes into the second one.</p>
-      <p class="muted">We have been selling personalised gifts since <b>2016</b>, first as a sole trader and, from 2019, as Suchmugs S.R.L. Today we sell through Amazon and a family of Etsy storefronts. Everything is made to order and produced by print partners in the United States, so orders ship domestically.</p>
+      <h2 data-ro="Ce facem">What we do</h2>
+      <p class="muted" data-ro="Un cadou personalizat funcționează doar dacă este potrivit pentru o persoană anume. Să nimerești asta la scară este în același timp o problemă de producție și una de software, iar cea mai mare parte a muncii noastre merge în a doua.">A personalised gift only works if it is right for one specific person. Getting that right at scale is a production problem and a software problem at the same time, and most of our work goes into the second one.</p>
+      <p class="muted" data-ro="Vindem cadouri personalizate din <b>2016</b>, întâi ca persoană fizică autorizată și, din 2019, ca Suchmugs S.R.L. Astăzi vindem prin Amazon și printr-o familie de magazine Etsy. Totul se face la comandă și este produs de parteneri de printare din Statele Unite, așa că livrarea este internă.">We have been selling personalised gifts since <b>2016</b>, first as a sole trader and, from 2019, as Suchmugs S.R.L. Today we sell through Amazon and a family of Etsy storefronts. Everything is made to order and produced by print partners in the United States, so orders ship domestically.</p>
     </div>
   </section>
 
-
   <section>
     <div class="card">
-      <h2>Some of our best sellers</h2>
-      <p class="muted">Personalised to the recipient, made to order, shipped from the US. Each one is personalised with the recipient's name or a date. Figures are lifetime demand for that design across every format and channel we have sold it on.</p>
+      <h2 data-ro="Câteva dintre cele mai vândute">Some of our best sellers</h2>
+      <p class="muted" data-ro="Fiecare este personalizat cu numele destinatarului sau cu o dată. Cifrele reprezintă cererea totală pentru acel design, pe toate formatele și canalele pe care l-am vândut.">Each one is personalised with the recipient's name or a date. Figures are lifetime demand for that design across every format and channel we have sold it on.</p>
       <div class="prods">
         <a class="prod" href="https://suchmugs.etsy.com/listing/671222462"><img src="img/doggrandma.jpg" alt="Personalised pregnancy announcement grandma mug">
-          <b>Promoted to Grandma Mug</b><span class="sold">1,800+ favourites</span><span>Personalised with a name &middot; Suchmugs</span></a>
+          <b data-ro="Cană Promoted to Grandma">Promoted to Grandma Mug</b><span class="sold" data-ro="1.800+ favorite">1,800+ favourites</span><span data-ro="Personalizată cu un nume &middot; Suchmugs">Personalised with a name &middot; Suchmugs</span></a>
         <a class="prod" href="https://suchcards.etsy.com/listing/1017965069"><img src="img/doctorcard.jpg" alt="Personalised doctor graduation card">
-          <b>Doctor Graduation Card</b><span class="sold">1,100+ sold in this design</span><span>Personalised with a name &middot; SuchCards</span></a>
+          <b data-ro="Felicitare absolvire medicină">Doctor Graduation Card</b><span class="sold" data-ro="1.100+ vândute din acest design">1,100+ sold in this design</span><span data-ro="Personalizată cu un nume &middot; SuchCards">Personalised with a name &middot; SuchCards</span></a>
         <a class="prod" href="https://suchgiftsco.etsy.com/listing/4532456666"><img src="img/officiantorn.jpg" alt="Personalised officiant proposal ornament">
-          <b>Officiant Proposal Ornament</b><span class="sold">3,000+ sold in this design</span><span>Personalised with names and a date &middot; SuchGiftsCo</span></a>
+          <b data-ro="Ornament pentru ofițerul stării civile">Officiant Proposal Ornament</b><span class="sold" data-ro="3.000+ vândute din acest design">3,000+ sold in this design</span><span data-ro="Personalizat cu nume și o dată &middot; SuchGiftsCo">Personalised with names and a date &middot; SuchGiftsCo</span></a>
       </div>
     </div>
   </section>
 
-
   <section>
     <div class="card">
-      <h2>What we build</h2>
-      <p class="muted">The production side runs on software we write ourselves. The pieces that matter:</p>
+      <h2 data-ro="Ce construim">What we build</h2>
+      <p class="muted" data-ro="Partea de producție rulează pe software scris de noi. Piesele care contează:">The production side runs on software we write ourselves. The pieces that matter:</p>
       <ul>
-        <li><b>Design generation and reconstruction</b> - turning a design idea into finished, production-ready artwork.</li>
-        <li><b>Personalisation validation</b> - checking automatically that a customer's name, date or message actually renders correctly on the physical product before anything is printed.</li>
-        <li><b>Defect and return prediction</b> - using our own order and review history to catch designs that will disappoint someone, ahead of production rather than after it.</li>
-        <li><b>Order orchestration</b> - routing every order from marketplace to the right print partner without a person in the middle.</li>
+        <li data-ro="<b>Generarea și reconstrucția designului</b> - transformarea unei idei în artwork finit, gata de producție."><b>Design generation and reconstruction</b> - turning a design idea into finished, production-ready artwork.</li>
+        <li data-ro="<b>Validarea personalizării</b> - verificarea automată că numele, data sau mesajul clientului se randează corect pe produsul fizic, înainte să se printeze ceva."><b>Personalisation validation</b> - checking automatically that a customer's name, date or message actually renders correctly on the physical product before anything is printed.</li>
+        <li data-ro="<b>Predicția retururilor și a defectelor</b> - folosim propriul istoric de comenzi și recenzii ca să prindem designurile care vor dezamăgi pe cineva, înainte de producție, nu după."><b>Defect and return prediction</b> - using our own order and review history to catch designs that will disappoint someone, ahead of production rather than after it.</li>
+        <li data-ro="<b>Orchestrarea comenzilor</b> - rutarea fiecărei comenzi de la marketplace către partenerul de printare potrivit, fără om la mijloc."><b>Order orchestration</b> - routing every order from marketplace to the right print partner without a person in the middle.</li>
       </ul>
-      <p class="muted" style="margin-top:14px">This is built on large language models for reasoning and orchestration, and on open-weight image models for the generation and rendering pipeline.</p>
+      <p class="muted" style="margin-top:14px" data-ro="Totul este construit pe modele lingvistice mari pentru raționament și orchestrare, și pe modele de imagini cu greutăți deschise pentru pipeline-ul de generare și randare.">This is built on large language models for reasoning and orchestration, and on open-weight image models for the generation and rendering pipeline.</p>
     </div>
   </section>
 
   <section>
     <div class="card">
-      <h2>Who runs it</h2>
-      <p class="muted"><b>Andrei Ghimus</b> founded Suchmugs in 2016 and still runs it single-handed - the commercial side and the engineering side both.</p>
-      <p class="muted">That combination is the unusual part. Most sellers at this volume buy their tooling; the software described above is written in-house, by the same person who negotiates with the print partners and answers the customer emails. A decade of shipping personalised product to American customers, and a decade of writing the systems that make it possible, sit in the same head - which is why decisions here move in days rather than quarters, and why the production pipeline is built around what actually goes wrong in production rather than around what a generic tool assumes.</p>
-      <p class="muted">He is based in Bucharest, works primarily in Python, and has been building automated systems for far longer than he has been selling mugs.</p>
+      <h2 data-ro="Cine se ocupă">Who runs it</h2>
+      <p class="muted" data-ro="<b>Andrei Ghimuș</b> a fondat Suchmugs în 2016 și îl conduce în continuare singur - și partea comercială, și partea de inginerie."><b>Andrei Ghimus</b> founded Suchmugs in 2016 and still runs it single-handed - the commercial side and the engineering side both.</p>
+      <p class="muted" data-ro="Combinația asta este partea neobișnuită. Majoritatea vânzătorilor la volumul acesta își cumpără uneltele; software-ul descris mai sus este scris în casă, de aceeași persoană care negociază cu partenerii de printare și răspunde la emailurile clienților. Un deceniu de livrat produs personalizat către clienți americani și un deceniu de scris sistemele care fac asta posibilă stau în același cap - de aceea deciziile se iau aici în zile, nu în trimestre, și de aceea pipeline-ul de producție este construit în jurul a ceea ce chiar se strică în producție, nu în jurul a ceea ce presupune o unealtă generică.">That combination is the unusual part. Most sellers at this volume buy their tooling; the software described above is written in-house, by the same person who negotiates with the print partners and answers the customer emails. A decade of shipping personalised product to American customers, and a decade of writing the systems that make it possible, sit in the same head - which is why decisions here move in days rather than quarters, and why the production pipeline is built around what actually goes wrong in production rather than around what a generic tool assumes.</p>
+      <p class="muted" data-ro="Este din București, lucrează în principal în Python și construiește sisteme automatizate de mult mai mult timp decât vinde căni.">He is based in Bucharest, works primarily in Python, and has been building automated systems for far longer than he has been selling mugs.</p>
     </div>
   </section>
 
   <section>
     <div class="grid">
       <div class="card">
-        <h2>Contact</h2>
-        <p class="muted">General and business enquiries:<br>
+        <h2 data-ro="Contact">Contact</h2>
+        <p class="muted" data-ro='Întrebări generale și de business:<br><a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a>'>General and business enquiries:<br>
         <a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a></p>
-        <p class="muted">If you are a customer with a question about an existing order, please reply through the marketplace you ordered from - that is where your order details live.</p>
+        <p class="muted" data-ro="Dacă sunteți client și aveți o întrebare despre o comandă existentă, vă rugăm să răspundeți prin marketplace-ul de unde ați comandat - acolo sunt detaliile comenzii.">If you are a customer with a question about an existing order, please reply through the marketplace you ordered from - that is where your order details live.</p>
       </div>
       <div class="card">
-        <h2>Company</h2>
+        <h2 data-ro="Companie">Company</h2>
         <dl>
-          <dt>Legal name</dt><dd>Suchmugs S.R.L.</dd>
-          <dt>Registration</dt><dd>J40/1626/2019</dd>
-          <dt>VAT / CUI</dt><dd>RO40613870</dd>
-          <dt>Registered office</dt><dd>Bucharest, Sector 6, Romania</dd>
-          <dt>Trading since</dt><dd>2016</dd>
-          <dt>Incorporated</dt><dd>2019</dd>
-          <dt>Markets</dt><dd>United States</dd>
+          <dt data-ro="Denumire legală">Legal name</dt><dd>Suchmugs S.R.L.</dd>
+          <dt data-ro="Înregistrare">Registration</dt><dd>J40/1626/2019</dd>
+          <dt data-ro="CUI / TVA">VAT / CUI</dt><dd>RO40613870</dd>
+          <dt data-ro="Sediu social">Registered office</dt><dd data-ro="București, Sector 6, România">Bucharest, Sector 6, Romania</dd>
+          <dt data-ro="Vindem din">Trading since</dt><dd>2016</dd>
+          <dt data-ro="Înființată">Incorporated</dt><dd>2019</dd>
+          <dt data-ro="Piețe">Markets</dt><dd data-ro="Statele Unite">United States</dd>
         </dl>
       </div>
     </div>
@@ -227,7 +205,26 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
 </div></main>
 
 <footer><div class="wrap">
-  &copy; 2026 Suchmugs S.R.L. &middot; Bucharest, Romania &middot; <a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a>
+  <span data-ro="&copy; 2026 Suchmugs S.R.L. &middot; București, România &middot; ">&copy; 2026 Suchmugs S.R.L. &middot; Bucharest, Romania &middot; </span><a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a>
 </div></footer>
 
+<script>
+(function(){
+  var nodes=[].slice.call(document.querySelectorAll('[data-ro]'));
+  nodes.forEach(function(n){ n.setAttribute('data-en', n.innerHTML); });
+  var btns=[].slice.call(document.querySelectorAll('.lang'));
+  function set(lang){
+    nodes.forEach(function(n){
+      var v=n.getAttribute(lang==='ro'?'data-ro':'data-en');
+      if(v!==null) n.innerHTML=v;
+    });
+    document.documentElement.lang = lang;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang===lang)); });
+    try{ localStorage.setItem('sm_lang', lang); }catch(e){}
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.lang); }); });
+  var saved=null; try{ saved=localStorage.getItem('sm_lang'); }catch(e){}
+  if(saved==='ro') set('ro');            // English is the default; RO only if explicitly chosen
+})();
+</script>
 </body></html>
