@@ -49,7 +49,7 @@ a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(192,87,58,
 a:hover{border-bottom-color:var(--clay)}
 .cta{display:inline-block;background:var(--clay);color:#fff;border:0;border-radius:999px;padding:13px 26px;font-weight:600;font-size:16px;box-shadow:var(--shadow)}
 .cta:hover{background:#a8492f;border:0}
-.logo{max-width:270px;height:auto;display:block;margin:0 0 20px}
+.wordmark{font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:34px;letter-spacing:-.03em;color:var(--brand);margin-bottom:16px}
 .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-top:18px}
 .prod{display:block;text-decoration:none;border:0}
 .prod img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
@@ -57,7 +57,6 @@ a:hover{border-bottom-color:var(--clay)}
 .prod span{display:block;font-size:13px;color:var(--muted)}
 .prod .sold{color:var(--ink-blue);font-weight:600}
 .prod:hover img{border-color:var(--ink-blue)}
-.shopmark{height:40px;width:auto;margin-bottom:9px;display:block}
 h2{border-left:4px solid var(--ink-blue);padding-left:12px;margin-left:-16px}
 .shops{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
 .shop{display:block;border:1px solid var(--line);border-radius:14px;padding:15px 17px;background:var(--paper);text-decoration:none}
@@ -75,15 +74,15 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
 <header class="hero"><div class="wrap">
   <div class="herogrid">
     <div>
-      <img class="logo" src="img/logo-suchmugs.png" alt="Suchmugs">
+          <div class="wordmark">Suchmugs</div>
       <div class="eyebrow">Personalised gifts &middot; made to order &middot; shipped in the USA</div>
       <h1>The gift that <span class="accent">proves you know them</span>.</h1>
       <p class="lede">Mugs, cards, tumblers and ornaments, personalised to one specific person. Designed and produced by Suchmugs S.R.L. - selling since 2016.</p>
       <p style="margin-top:26px"><a class="cta" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas">Shop on Amazon</a></p>
     </div>
     <div class="heroart">
-      <img src="img/officiant.jpg" alt="Personalised wedding officiant mug">
-      <div class="tagpill">3,000+ sold</div>
+      <img src="img/doggrandma.jpg" alt="Personalised pregnancy announcement grandma mug">
+      <div class="tagpill">1,800+ favourites</div>
     </div>
   </div>
   <div class="trust">
@@ -108,16 +107,14 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
   <section>
     <div class="card">
       <h2>Some of our best sellers</h2>
-      <p class="muted">Personalised to the recipient, made to order, shipped from the US. Figures are lifetime units for that design across every format and channel we have sold it on.</p>
+      <p class="muted">Personalised to the recipient, made to order, shipped from the US. Each one is personalised with the recipient's name or a date. Figures are lifetime demand for that design across every format and channel we have sold it on.</p>
       <div class="prods">
-        <a class="prod" href="https://www.etsy.com/shop/Suchmugs"><img src="img/officiant.jpg" alt="Personalised wedding officiant mug">
-          <b>Wedding Officiant Mug</b><span class="sold">3,000+ sold</span><span>Suchmugs on Etsy</span></a>
-        <a class="prod" href="https://www.etsy.com/shop/SuchCards"><img src="img/stepdad.jpg" alt="Personalised step dad greeting card">
-          <b>Step Dad / Bonus Dad Card</b><span class="sold">1,900+ sold</span><span>SuchCards on Etsy</span></a>
-        <a class="prod" href="https://www.etsy.com/shop/Suchmugs"><img src="img/nanny.jpg" alt="Personalised nanny thank you mug">
-          <b>Nanny Thank You Mug</b><span class="sold">1,400+ sold</span><span>Suchmugs on Etsy</span></a>
-        <a class="prod" href="https://www.etsy.com/shop/SuchGiftsCo"><img src="img/counselor.jpg" alt="Personalised counselor tumbler">
-          <b>Counselor Tumbler</b><span class="sold">900+ sold</span><span>SuchGiftsCo on Etsy</span></a>
+        <a class="prod" href="https://suchmugs.etsy.com/listing/671222462"><img src="img/doggrandma.jpg" alt="Personalised pregnancy announcement grandma mug">
+          <b>Promoted to Grandma Mug</b><span class="sold">1,800+ favourites</span><span>Personalised with a name &middot; Suchmugs</span></a>
+        <a class="prod" href="https://suchcards.etsy.com/listing/1017965069"><img src="img/doctorcard.jpg" alt="Personalised doctor graduation card">
+          <b>Doctor Graduation Card</b><span class="sold">1,100+ sold in this design</span><span>Personalised with a name &middot; SuchCards</span></a>
+        <a class="prod" href="https://suchgiftsco.etsy.com/listing/4532456666"><img src="img/officiantorn.jpg" alt="Personalised officiant proposal ornament">
+          <b>Officiant Proposal Ornament</b><span class="sold">3,000+ sold in this design</span><span>Personalised with names and a date &middot; SuchGiftsCo</span></a>
       </div>
     </div>
   </section>
@@ -128,12 +125,12 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
       <p class="muted">Each storefront covers a different part of the range.</p>
       <div class="shops">
         <a class="shop" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas">
-          <b>Suchmugs on Amazon</b><span>The full personalised mug range, Prime-eligible.</span></a>
-        <a class="shop" href="https://www.etsy.com/shop/Suchmugs">
-          <img class="shopmark" src="img/logo-suchmugs.png" alt=""><b>Suchmugs on Etsy</b><span>Personalised mugs, made to order.</span></a>
-        <a class="shop" href="https://www.etsy.com/shop/SuchGiftsCo">
-          <img class="shopmark" src="img/logo-sgc.png" alt=""><b>SuchGiftsCo on Etsy</b><span>Tumblers, ornaments and keychains.</span></a>
-        <a class="shop" href="https://www.etsy.com/shop/SuchCards">
+          <b>Suchmugs on Amazon</b><span>Our ready-to-ship range of gift mugs.</span></a>
+        <a class="shop" href="https://suchmugs.etsy.com">
+          <b>Suchmugs on Etsy</b><span>Personalised mugs, made to order.</span></a>
+        <a class="shop" href="https://suchgiftsco.etsy.com">
+          <b>SuchGiftsCo on Etsy</b><span>Tumblers, ornaments and keychains.</span></a>
+        <a class="shop" href="https://suchcards.etsy.com">
           <b>SuchCards on Etsy</b><span>Personalised greeting cards.</span></a>
       </div>
     </div>
