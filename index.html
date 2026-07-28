@@ -47,15 +47,23 @@ ul{margin:0;padding-left:20px;color:var(--muted)}
 li{margin-bottom:8px}
 a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(192,87,58,.35)}
 a:hover{border-bottom-color:var(--clay)}
-@media (max-width:560px){.buys{gap:8px}.orline{width:100%;margin:4px 0 0}}
-.buys{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:30px}
+@media (max-width:560px){.buys{gap:8px}.buys{margin-top:30px}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.buyrow+.buyrow{margin-top:16px}
+.orline{width:100%;margin:4px 0 0}}
+.buys{margin-top:30px}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.buyrow+.buyrow{margin-top:16px}
 .orline{color:var(--muted);font-size:16px}
 .marks{display:flex;align-items:center;gap:22px}
 .mark{display:inline-flex;border:0;opacity:.9;transition:opacity .15s}
 .mark:hover{opacity:1;border:0}
 .mark img{height:23px;width:auto;display:block}
 @media (max-width:760px){.marks{gap:16px}.mark img{height:20px}}
-@media (max-width:520px){.buys{gap:12px}.orline{width:100%}.marks{flex-wrap:wrap;gap:14px}}
+@media (max-width:520px){.buys{gap:12px}.buys{margin-top:30px}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.buyrow+.buyrow{margin-top:16px}
+.orline{width:100%}.marks{flex-wrap:wrap;gap:14px}}
 .cta{display:inline-block;background:var(--clay);color:#fff;border:0;border-radius:999px;padding:11px 22px;font-weight:600;font-size:15px;box-shadow:var(--shadow)}
 .cta:hover{background:#a8492f;border:0}
 .wordmark{font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:34px;letter-spacing:-.03em;color:var(--brand);margin-bottom:16px}
@@ -84,25 +92,32 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
 <header class="hero"><div class="wrap">
   <div class="herogrid">
     <div>
-          <img class="wordmark-img" src="img/logo-suchmugs.png" alt="Suchmugs">
+      <img class="wordmark-img" src="img/logo-suchmugs.png" alt="Suchmugs">
       <div class="eyebrow">Personalised gifts &middot; made to order &middot; shipped in the USA</div>
       <h1>The gift that <span class="accent">proves you know them</span>.</h1>
       <p class="lede">Mugs, cards, tumblers and ornaments, personalised to one specific person. Designed and produced by Suchmugs S.R.L. - selling since 2016.</p>
-      <div class="buys">
-        <a class="cta" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas">Shop on Amazon</a>
-        <span class="orline">or on Etsy:</span>
-        <span class="marks">
-          <a class="mark" href="https://suchmugs.etsy.com"><img src="img/mark-suchmugs.png" alt="Suchmugs on Etsy"></a>
-          <a class="mark" href="https://suchcards.etsy.com"><img src="img/mark-suchcards.png" alt="Suchcards on Etsy"></a>
-          <a class="mark" href="https://suchgiftsco.etsy.com"><img src="img/mark-suchgifts.png" alt="Suchgifts on Etsy"></a>
-        </span>
-      </div>
     </div>
     <a class="heroart" href="https://suchmugs.etsy.com/listing/586899319">
       <img src="img/hero-handful.jpg" alt="Funny mug reading I know I am a handful but that is why you got two hands">
       <div class="tagpill">440+ favourites</div>
     </a>
   </div>
+
+  <div class="buys">
+    <div class="buyrow">
+      <a class="cta" href="https://www.amazon.com/stores/page/0EBC8070-C0F1-4E0B-8C9D-0F361DD76C93?maas=maas_adg_49488A83F84394D0D46AF9D0AD7DDD33_afap_abs&amp;ref_=aa_maas&amp;tag=maas">Shop on Amazon</a>
+      <span class="orline">or</span>
+    </div>
+    <div class="buyrow">
+      <span class="orline">on Etsy:</span>
+      <span class="marks">
+        <a class="mark" href="https://suchmugs.etsy.com"><img src="img/mark-suchmugs-v2.png" alt="Suchmugs on Etsy"></a>
+        <a class="mark" href="https://suchcards.etsy.com"><img src="img/mark-suchcards-v2.png" alt="Suchcards on Etsy"></a>
+        <a class="mark" href="https://suchgiftsco.etsy.com"><img src="img/mark-suchgifts-v2.png" alt="Suchgifts on Etsy"></a>
+      </span>
+    </div>
+  </div>
+
   <div class="trust">
     <div><b>10 yrs</b><span>selling since 2016</span></div>
     <div><b>100k+</b><span>orders shipped</span></div>
