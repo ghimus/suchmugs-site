@@ -47,14 +47,16 @@ ul{margin:0;padding-left:20px;color:var(--muted)}
 li{margin-bottom:8px}
 a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(192,87,58,.35)}
 a:hover{border-bottom-color:var(--clay)}
-.marks{display:flex;flex-wrap:wrap;align-items:center;gap:20px}
-.mark{display:inline-flex;align-items:center;border:0;opacity:.92;transition:opacity .15s,transform .15s}
-.mark:hover{opacity:1;transform:translateY(-1px);border:0}
-.mark img{height:26px;width:auto;display:block}
-.buys{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px}
-.orline{color:var(--muted);font-size:16px;margin:0 2px}
 @media (max-width:560px){.buys{gap:8px}.orline{width:100%;margin:4px 0 0}}
-.cta{display:inline-block;background:var(--clay);color:#fff;border:0;border-radius:999px;padding:13px 26px;font-weight:600;font-size:16px;box-shadow:var(--shadow)}
+.buys{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:30px}
+.orline{color:var(--muted);font-size:16px}
+.marks{display:flex;align-items:center;gap:22px}
+.mark{display:inline-flex;border:0;opacity:.9;transition:opacity .15s}
+.mark:hover{opacity:1;border:0}
+.mark img{height:23px;width:auto;display:block}
+@media (max-width:760px){.marks{gap:16px}.mark img{height:20px}}
+@media (max-width:520px){.buys{gap:12px}.orline{width:100%}.marks{flex-wrap:wrap;gap:14px}}
+.cta{display:inline-block;background:var(--clay);color:#fff;border:0;border-radius:999px;padding:11px 22px;font-weight:600;font-size:15px;box-shadow:var(--shadow)}
 .cta:hover{background:#a8492f;border:0}
 .wordmark{font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:34px;letter-spacing:-.03em;color:var(--brand);margin-bottom:16px}
 .wordmark-img{max-width:300px;height:auto;display:block;margin-bottom:18px}
