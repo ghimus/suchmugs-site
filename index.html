@@ -26,7 +26,9 @@ ul{margin:0;padding-left:20px;color:var(--muted)}
 li{margin-bottom:8px}
 
 /* language toggle */
-.langbar{max-width:820px;margin:0 auto;padding:14px 24px 0;display:flex;justify-content:flex-end;gap:6px}
+.langbar{max-width:820px;margin:0 auto;padding:14px 24px 0;display:flex;justify-content:flex-end;align-items:center;gap:6px}
+.navlink{margin-right:auto;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--clay)}
+.navlink:hover{color:var(--clay)}
 .lang{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
   background:none;border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;font-family:inherit}
 .lang[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -95,6 +97,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
 </style></head><body>
 
 <div class="langbar">
+  <a class="navlink" href="https://suchmugs.faire.com?utm_source=embed" data-ro="Pentru magazine: en-gros pe Faire">Retailers: buy wholesale on Faire</a>
   <button class="lang" data-lang="en" aria-pressed="true">EN</button>
   <button class="lang" data-lang="ro" aria-pressed="false">RO</button>
 </div>
@@ -185,6 +188,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 60px;font
         <h2 data-ro="Contact">Contact</h2>
         <p class="muted" data-ro='Întrebări generale și de business:<br><a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a>'>General and business enquiries:<br>
         <a href="mailto:contact@suchmugs.com">contact@suchmugs.com</a></p>
+        <p class="muted" data-ro='Magazinele care vor să ne vândă produsele pot comanda en-gros pe <a href="https://suchmugs.faire.com?utm_source=embed">Faire</a>.'>Retailers who want to stock our products can order wholesale on <a href="https://suchmugs.faire.com?utm_source=embed">Faire</a>.</p>
         <p class="muted" data-ro="Dacă ești client și ai o întrebare despre o comandă, scrie-ne pe marketplace-ul de unde ai comandat - acolo sunt toate detaliile.">If you are a customer with a question about an existing order, please reply through the marketplace you ordered from - that is where your order details live.</p>
       </div>
       <div class="card">
